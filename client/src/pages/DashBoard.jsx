@@ -94,6 +94,46 @@ const TaskTable = ({ tasks }) => {
   );
 };
 
+const UserTable = ({ users }) => {
+  const TableHeader = () => (
+    <thead className="border-b border-gray-300 ">
+      <tr className="text-black  text-left">
+        <th className="py-2">Full Name</th>
+        {/* <th className="py-2">Status</th> */}
+        <th className="py-2">Created At</th>
+      </tr>
+    </thead>
+  );
+
+  const TableRow = ({ user }) => (
+    <tr className="border-b border-gray-200  text-gray-600 hover:bg-gray-400/10">
+      <td className="py-2">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-full text-white flex items-center justify-center text-sm bg-violet-700">
+            <span className="text-center">{getInitials(user?.name)}</span>
+          </div>
+
+          <div>
+            <p> {user.name}</p>
+            <span className="text-xs text-black">{user?.role}</span>
+          </div>
+        </div>
+      </td>
+
+      {/* <td>
+        <p
+          className={clsx(
+            "w-fit px-3 py-1 rounded-full text-sm",
+            user?.isActive ? "bg-blue-200" : "bg-yellow-100"
+          )}
+        >
+          {user?.isActive ? "Active" : "Disabled"}
+        </p>
+      </td> */}
+      <td className="py-2 text-sm">{moment(user?.createdAt).fromNow()}</td>
+    </tr>
+  );
+
 const Dashboard = () => {
   const { data, isLoading } = useGetDashboardStatsQuery();
 
@@ -143,7 +183,7 @@ const Dashboard = () => {
         <div className="h-full flex flex-1 flex-col justify-between">
           <p className="text-base text-gray-600">{label}</p>
           <span className="text-2xl font-semibold">{count}</span>
-          {/* <span className="text-sm text-gray-400">{"110 last month"}</span> */}
+          
         </div>
 
         <div
@@ -172,8 +212,14 @@ const Dashboard = () => {
         <Chart data={data?.graphData} />
       </div>
 
-      <div className=" flex flex-col md:flex-row gap-4 2xl:gap-10 py-8 ">
+      <div className="w-full flex flex-col md:flex-row gap-4 2xl:gap-10 py-8">
+        {/* /left */}
+
         <TaskTable tasks={data.last10Task} />
+
+        {/* /right */}
+
+        <UserTable users={data.users} />
       </div>
     </div>
   );
