@@ -80,7 +80,7 @@ const TaskTable = ({ tasks }) => {
   );
   return (
     <>
-      <div className="w-full  bg-white px-2 md:px-4 pt-4 pb-4 shadow-md rounded">
+      <div className="w-full md:w-2/3 bg-white px-2 md:px-4 pt-4 pb-4 shadow-md rounded">
         <table className="w-full">
           <TableHeader />
           <tbody>
@@ -134,6 +134,19 @@ const UserTable = ({ users }) => {
     </tr>
   );
 
+  return (
+    <div className="w-full md:w-1/3 bg-white h-fit px-2 md:px-6 py-4 shadow-md rounded">
+      <table className="w-full mb-5">
+        <TableHeader />
+        <tbody>
+          {users?.map((user, index) => (
+            <TableRow key={index + user?._id} user={user} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 const Dashboard = () => {
   const { data, isLoading } = useGetDashboardStatsQuery();
 
@@ -183,7 +196,7 @@ const Dashboard = () => {
         <div className="h-full flex flex-1 flex-col justify-between">
           <p className="text-base text-gray-600">{label}</p>
           <span className="text-2xl font-semibold">{count}</span>
-          
+          <span className="text-sm text-gray-400">{"110 last month"}</span>
         </div>
 
         <div
