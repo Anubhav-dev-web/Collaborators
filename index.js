@@ -12,7 +12,7 @@ import routes from "./routes/index.js";
 //resolving dirname for es module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-// console.log(__dirname);
+console.log(__dirname);
 
 dotenv.config();
 
@@ -36,10 +36,6 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", routes);
-
-app.use(routeNotFound);
-app.use(errorHandler);
-
 //Use the clent app
 app.use(express.static(path.join(__dirname, "/client/dist")));
 
@@ -47,5 +43,9 @@ app.use(express.static(path.join(__dirname, "/client/dist")));
 app.get("*", (req, res) =>
   res.sendFile(path.join(__dirname, "/client/dist/index.html"))
 );
+app.use(routeNotFound);
+app.use(errorHandler);
+
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
