@@ -5,7 +5,8 @@ In a dynamic work environment, effective task management is crucial for team suc
 
 ## Dashboard 
 
-![1](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/ba9a77bf-f86b-4644-89d9-fd38447c174c)
+![das](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/cdebba53-625a-42db-9e59-984e6a5612c8)
+
 
 
 ## Features
@@ -40,14 +41,17 @@ In a dynamic work environment, effective task management is crucial for team suc
 
 ## Tasks
 
-![2task](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/445a594c-5a01-47aa-9c65-65ff55228af4)
+![task](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/44694fd8-fdf0-4eca-8b29-79284de8033a)
+
 
 ## Tasks view
 
-![3taskopen](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/840511aa-152d-44c3-8501-a188a3461865)
+![taskview](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/b98ff0ef-0dd4-408b-8f0d-524f052c140b)
+
 
 ## Time line
-![time line](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/08b5fd77-8dae-466b-8dda-589dae892c41)
+
+![time](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/f2e39f1e-20e9-4cc6-9791-7313ede424c9)
 
 
 ## Getting Started
