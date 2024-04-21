@@ -3,6 +3,11 @@
 ## Introduction
 In a dynamic work environment, effective task management is crucial for team success. Traditional methods of task tracking through spreadsheets or manual systems can be cumbersome and prone to errors. The Cloud-Based Task Manager aims to address these challenges by providing a centralized platform for task management, enabling seamless collaboration and improved workflow efficiency.
 
+## Dashboard 
+
+![1](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/ba9a77bf-f86b-4644-89d9-fd38447c174c)
+
+
 ## Features
 - **User Authentication**: Secure user authentication using JWT tokens.
 - **Task Management**: Create, update, and delete tasks.
@@ -32,6 +37,18 @@ In a dynamic work environment, effective task management is crucial for team suc
 - Recharts for data visualization
 - Sonner for notifications
 - Moment.js for date and time handling
+
+## Tasks
+
+![2task](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/445a594c-5a01-47aa-9c65-65ff55228af4)
+
+## Tasks view
+
+![3taskopen](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/840511aa-152d-44c3-8501-a188a3461865)
+
+## Time line
+![time line](https://github.com/Anubhav-dev-web/Collaborators/assets/80172002/08b5fd77-8dae-466b-8dda-589dae892c41)
+
 
 ## Getting Started
 ### Prerequisites
