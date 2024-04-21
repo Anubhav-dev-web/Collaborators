@@ -81,7 +81,7 @@ const Sidebar = () => {
   return (
     <div className="w-full  h-full flex flex-col gap-6 p-5">
       <h1 className="flex gap-1 items-center">
-        <p className="bg-blue-600 p-2 rounded-full">
+        <p className=" p-2 rounded-full">
           <img src="logo.svg" alt="logo" className="w-10 h-10" />
         </p>
        <span className="text-2xl font-bold text-black">Collaborator</span>
