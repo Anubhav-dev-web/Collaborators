@@ -97,7 +97,7 @@ const Sidebar = () => {
         <p className="text-xs text-gray-500 mt-4">
           Copyright © 2024. All Rights Reserved
           <br />
-          Made with 💙 by Anubhav
+         
         </p>
       </div>
     </div>
